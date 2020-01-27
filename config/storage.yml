@@ -1,10 +1,11 @@
 test:
   service: Disk
-  root: <%= Rails.root.join("tmp/storage") %>
+  root: <%= Rails.root.join("tmp/public") %>
 
 local:
   service: Disk
-  root: <%= Rails.root.join("storage") %>
+  root: <%= Rails.root.join("public") %>
+
 
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
@@ -31,7 +32,9 @@ google_dev:
   project: penguinFlipperGame
   credentials: <%= Rails.root.join("config/secrets/penguinflippergame.json") %>
   bucket: penguin_flipper_game_bucket
+
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
+
 # microsoft:
 #   service: AzureStorage
 #   storage_account_name: your_account_name
