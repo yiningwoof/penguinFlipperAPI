@@ -24,7 +24,7 @@ class Api::V1::PenguinPicturesController < ApplicationController
     @penguin_pictures["penguin_id"] = @penguin_id
     @penguin_pictures["penguin_pics"] = []
     @penguin.pictures.each{ |pic|
-      @penguin_pictures["penguin_pics"].push(url_for(pic))
+      @penguin_pictures["penguin_pics"].push("https://storage.cloud.google.com/penguin_flipper_game_bucket/#{pic.key}")
   }
     render json: @penguin_pictures
   end
