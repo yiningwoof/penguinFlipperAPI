@@ -25,6 +25,7 @@ google:
   service: GCS
   project: penguinFlipperGame
   credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'].as_json %>
+
   bucket: penguin_flipper_game_bucket
 google_dev:
   service: GCS
