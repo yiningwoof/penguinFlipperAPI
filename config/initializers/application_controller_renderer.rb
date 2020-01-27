@@ -7,7 +7,7 @@
 #   )
 # end
 
-ActiveRecord::Base.establish_connection!(
- :private_key_id   => ENV['private_key_id'],
- :private_key => ENV['private_key']
-)
+# ActiveRecord::Base.establish_connection!(
+#  :private_key_id   => ENV['private_key_id'],
+#  :private_key => ENV['private_key']
+# )
