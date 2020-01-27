@@ -37,7 +37,7 @@ google_prod:
   project: penguinFlipperGame
   credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'].as_json %>
   bucket: penguin_flipper_game_bucket
-  public: true
+  # public: true
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
 
 # microsoft:
