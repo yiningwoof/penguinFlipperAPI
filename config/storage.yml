@@ -37,6 +37,7 @@ google_prod:
   project: penguinFlipperGame
   credentials: <%= Rails.root.join("config/secrets/penguinflippergame.json") %>
   bucket: penguin_flipper_game_bucket
+  public: true
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
 
 # microsoft:
