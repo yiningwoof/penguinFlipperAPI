@@ -11,7 +11,7 @@ class Api::V1::PenguinPicturesController < ApplicationController
       phash["penguin_pics"] = []
       p.pictures.each{ |pic| 
         # phash["penguin_pics"].push(rails_blob_path(pic), deposition: "attachment")
-        phash["penguin_pics"].push(url_for(pic))
+        phash["penguin_pics"].push("https://storage.cloud.google.com/penguin_flipper_game_bucket/#{pic.key}")
     @all_pics.push(phash)}
     }
     render json: @all_pics.uniq
